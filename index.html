@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Request price</h1>
+    <p id="description">Takes under 5 minutes</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label"
+          >Name: <input placeholder="John Doe" id="name" type="text" required
+        /></label>
+        <label id="email-label"
+          >Mail:
+          <input
+            placeholder=" jodo@mail.com"
+            required
+            name="email"
+            id="email"
+            type="email"
+        /></label>
+        <label id="number-label"
+          >Budget:
+          <input
+            placeholder="20000"
+            min="10000"
+            max="500000"
+            id="number"
+            type="number"
+        /></label>
+
+        <label
+          >Pickup: <input type="radio" class="inline" name="take" value="pick"
+        /></label>
+
+        <label
+          >Delivery:
+          <input type="radio" class="inline" name="take" value="deli"
+        /></label>
+        <select id="dropdown">
+          <option>Now</option>
+          <option>Can wait</option>
+          <option>Later</option>
+        </select>
+        <label
+          >Today: <input class="inline" type="checkbox" value="today"
+        /></label>
+        <label
+          >Tommorow: <input class="inline" type="checkbox" value="tommorow"
+        /></label>
+        <label
+          >This week: <input class="inline" type="checkbox" value="this"
+        /></label>
+
+        <label
+          >Leave a note:<textarea
+            name="note"
+            rows="3"
+            cols="30"
+            placeholder="Additional info if required"
+          ></textarea>
+        </label>
+      </fieldset>
+      <button id="submit" class="button">Submit</button>
+    </form>
+  </body>
+</html>
