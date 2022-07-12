@@ -32,8 +32,14 @@ input,
 textarea,
 select {
   margin: 10px, 0, 0, 0;
-  width: 99%;
+  width: 70%;
   min-height: 1em;
+}
+
+input[id='name'],
+input[id='email'],
+input[id='number'] {
+  float: right;
 }
 
 .inline {
